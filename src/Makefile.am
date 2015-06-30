@@ -40,7 +40,7 @@ EXTRA_DIST = \
 	cjson/cjson.h
 
 libee_la_CPPFLAGS = $(LIBXML2_CFLAGS) $(LIBESTR_CFLAGS) $(LIBEE_CFLAGS)
-libee_la_LIBADD = $(LIBXML2_LIBS) $(LIBESTR_LIBS)
+libee_la_LIBADD = $(lib_LTLIBRARIES) $(LIBXML2_LIBS) $(LIBESTR_LIBS)
 libee_la_LDFLAGS = -version-info 0:0:0
 
 libee_convert_SOURCES = convert.c
